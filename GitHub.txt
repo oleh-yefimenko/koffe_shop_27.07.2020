@@ -1,0 +1,7 @@
+для создания репозитория
+git config --global user.email "oleh.yefimenko@gmail.com"
+git config --global user.name "Oleh Yefimenko"
+
+для заливки на GitHub 
+git remote add origin https://github.com/oleh-yefimenko/koffe_shop_27.07.2020.git
+git push -u origin master

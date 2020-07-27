@@ -1,0 +1,14 @@
+body {
+	font-family: $font-family-open;
+	font-weight: 400;
+	a {
+		font-family: $font-family-open;
+		font-weight: 400;
+	}
+}
+.container {
+	max-width: 1700px;
+	margin: 0 auto;
+	padding: 0 40px;
+	// background: #000;
+}

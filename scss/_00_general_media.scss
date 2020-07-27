@@ -1,0 +1,32 @@
+//     Extra large ≥1200px
+@media screen and (max-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+//       large ≥992px
+@media screen and (max-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+//       Medium ≥768px
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+//       Small ≥576px
+@media screen and (max-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}
+
+//  //       Extra small <576px
+//  // сделующие медиа запросы
+// @media screen and (max-width: 576px) {
+// 	.container {
+// 		max-width: 90%;
+// 	}
+// }
