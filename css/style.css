@@ -121,6 +121,35 @@ body a {
   padding: 0 40px;
 }
 
+.heading {
+  margin: 0 0 45px 0;
+}
+
+.heading__title {
+  margin: 0 0 25px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Kurale", serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.heading__subtitle-logo {
+  max-width: 189px;
+  margin: 0 auto 25px auto;
+}
+
+.heading__subtitle-logo img_ {
+  max-width: 100%;
+}
+
+.heading__subtitle {
+  display: block;
+  margin: 0 auto;
+  max-width: 730px;
+  text-align: center;
+}
+
 .promo {
   min-height: 100vh;
   -webkit-box-flex: 1;
@@ -436,6 +465,54 @@ body a {
 /* Точки (булиты) */
 /* Активная точка */
 /* Элемент точки */
+.sentence {
+  padding: 60px 0;
+}
+
+.sentence__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sentence__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 10px 0 0;
+  min-width: 170px;
+}
+
+.sentence__card:last-child {
+  margin: 0;
+}
+
+.sentence__card-image {
+  margin: 0 0 20px 0;
+}
+
+.sentence__card-title {
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  font-family: "Kurale", serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
 .fixed {
   position: relative;
   padding: 80px 0;
@@ -485,6 +562,26 @@ body a {
 @media screen and (max-width: 576px) {
   .container {
     max-width: 540px;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .heading {
+    margin: 0 0 35px 0;
+  }
+  .heading__title {
+    margin: 0 0 25px 0;
+    font-size: 30px;
+  }
+  .heading__subtitle-logo {
+    max-width: 189px;
+    margin: 0 auto 20px auto;
+  }
+  .heading__subtitle {
+    display: block;
+    margin: 0 auto;
+    max-width: 730px;
+    text-align: center;
   }
 }
 
@@ -642,5 +739,47 @@ body a {
   .open .line-menu.end {
     -webkit-transform: rotate(-90deg) translateX(-3px);
             transform: rotate(-90deg) translateX(-3px);
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .sentence__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sentence__card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 0 20px 0;
+    padding: 7px;
+  }
+  .sentence__card:last-child {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .sentence {
+    padding: 60px 0 20px 0;
+  }
+  .sentence__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sentence__card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    padding: 15px;
+  }
+  .sentence__card:last-child {
+    margin: 0 0 20px 0;
   }
 }

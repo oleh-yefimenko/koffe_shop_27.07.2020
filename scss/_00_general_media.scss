@@ -25,6 +25,26 @@
 	}
 }
 
+@media screen and (max-width: 335px) {
+	.heading {
+		margin: 0 0 35px 0;
+		&__title {
+			margin: 0 0 25px 0;
+			font-size: 30px;
+		}
+		&__subtitle-logo {
+			max-width: 189px;
+			margin: 0 auto 20px auto;
+		}
+		&__subtitle {
+			display: block;
+			margin: 0 auto;
+			max-width: 730px;
+			text-align: center;
+		}
+	}
+}
+
 //  //       Extra small <576px
 //  // сделующие медиа запросы
 // @media screen and (max-width: 576px) {

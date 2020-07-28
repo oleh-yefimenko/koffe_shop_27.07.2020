@@ -1,0 +1,56 @@
+@media screen and (max-width: 740px) {
+	.sentence {
+		&__content {
+			flex-wrap: wrap;
+		}
+
+		&__card {
+			flex: 1 1 50%;
+			display: flex;
+			justify-content: space-between;
+			margin: 0 0 20px 0;
+			padding: 7px;
+		}
+
+		&__card:last-child {
+			margin: 0 0 20px 0;
+		}
+
+		&__card-image {
+		}
+
+		&__card-title {
+		}
+
+		&__card-text {
+		}
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.sentence {
+		padding: 60px 0 20px 0;
+		&__content {
+			flex-wrap: wrap;
+		}
+
+		&__card {
+			flex: 1 1 100%;
+
+			padding: 15px;
+		}
+
+		&__card:last-child {
+			margin: 0 0 20px 0;
+		}
+
+		&__card-image {
+		}
+
+		&__card-title {
+		}
+
+		&__card-text {
+		}
+	}
+}
