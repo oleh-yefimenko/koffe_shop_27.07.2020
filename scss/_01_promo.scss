@@ -2,7 +2,7 @@
 	min-height: 100vh;
 	flex: 1 1 100vh;
 	// display: flex;
-	overflow: hidden;
+	// overflow: hidden;
 	color: $color-white;
 	a {
 		color: $color-white;
@@ -156,7 +156,8 @@
 	//-------------------------> Стилизация конкретного слайдера
 	&__slider {
 		position: relative;
-		// max-height: 100%;
+		overflow: hidden;
+		max-height: 100vh;
 
 		// min-width: 0;
 

@@ -126,7 +126,6 @@ body a {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100vh;
           flex: 1 1 100vh;
-  overflow: hidden;
   color: #fff;
 }
 
@@ -302,6 +301,8 @@ body a {
 
 .promo__slider {
   position: relative;
+  overflow: hidden;
+  max-height: 100vh;
   /* Точки (булиты) */
   /* Активная точка */
   /* Элемент точки */
@@ -465,12 +466,14 @@ body a {
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 1140px;
+    padding: 0 20px;
   }
 }
 
 @media screen and (max-width: 992px) {
   .container {
     max-width: 960px;
+    padding: 0 10px;
   }
 }
 
@@ -497,6 +500,9 @@ body a {
 }
 
 @media screen and (max-width: 650px) {
+  .promo__title {
+    font-size: 55px;
+  }
   .header__menu {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;

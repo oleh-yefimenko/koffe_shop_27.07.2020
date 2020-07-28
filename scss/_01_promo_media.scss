@@ -13,6 +13,11 @@
 }
 
 @media screen and (max-width: 650px) {
+	.promo {
+		&__title {
+			font-size: 55px;
+		}
+	}
 	.header {
 		&__menu {
 			justify-content: space-between;
