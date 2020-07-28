@@ -8,55 +8,16 @@
 
 	.header {
 		&__navigation {
-			margin: 0 0 60px 0;
-		}
-	}
-}
-@media screen and (max-width: 650px) {
-	.promo {
-		&__title {
-			font-size: 55px;
-		}
-	}
-	.header {
-		&__menu {
-			justify-content: space-between;
-		}
-		&__list {
-			margin: 0 10px;
-		}
-		&__list:first-child {
-			margin: 0;
-		}
-		&__list:last-child {
-			margin: 0;
+			// margin: 0 0 60px 0; // изменил
+			margin: -100px 0 0 0;
 		}
 	}
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 710px) {
 	.promo {
 		&__content {
-			margin: 90px 0 0 0;
-		}
-
-		&__slider {
-			position: relative;
-			overflow: hidden;
-			// max-height: 650px;
-		}
-
-		&__slide {
-			overflow: hidden;
-			// max-height: 650px;
-
-			img {
-				max-height: 100%;
-				// max-width: 100%;
-				object-fit: cover;
-				// transform: scale(1.2);
-				// transition: all 1s ease-out;
-			}
+			margin: 200px 0 0 0;
 		}
 	}
 	.header {
@@ -64,7 +25,7 @@
 		width: 100%;
 		height: 100%;
 		&__navigation {
-			margin: 0;
+			// margin: 0;
 		}
 		//-----------------> menu
 		&__menu {
@@ -75,7 +36,7 @@
 			width: 100%;
 			height: 100%;
 			z-index: 10;
-			padding: 110px 0 0 0;
+			padding: 90px 0 0 0;
 			background: rgba(0, 0, 0, 0.95);
 			flex-direction: column;
 			justify-content: stretch;
@@ -83,18 +44,24 @@
 		}
 
 		&__list {
-			margin: 0 0 40px 0;
+			// margin: 0 0 40px 0; // изменил
+			margin: -100px 0 0 0;
 		}
 
 		&__list:first-child {
-			margin: 0 0 40px 0;
+			// margin: 0 0 40px 0; // изменил
+			margin: -100px 0 0 0;
+		}
+
+		&__list:last-child {
+			margin: -100px 0 0 0;
 		}
 
 		&__link {
-			font-size: 30px;
-			line-height: 16px;
-			letter-spacing: 0.05em;
-			text-transform: uppercase;
+			// font-size: 30px;
+			// line-height: 16px;
+			// letter-spacing: 0.05em;
+			// text-transform: uppercase;
 		}
 
 		&__menu.active {
@@ -156,4 +123,53 @@
 		transform: rotate(-90deg) translateX(-3px);
 	}
 	//<----------- конец menu burger
+}
+
+@media screen and (max-width: 650px) {
+	.promo {
+		&__title {
+			font-size: 55px;
+		}
+	}
+	.header {
+		&__menu {
+			justify-content: space-between;
+		}
+		&__list {
+			// margin: 0 10px;
+		}
+		&__list:first-child {
+			// margin: 0;
+		}
+		&__list:last-child {
+			// margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.promo {
+		// &__content {
+		// 	margin: 90px 0 0 0;
+		// }
+
+		&__slider {
+			position: relative;
+			overflow: hidden;
+			// max-height: 650px;
+		}
+
+		&__slide {
+			overflow: hidden;
+			// max-height: 650px;
+
+			img {
+				max-height: 100%;
+				// max-width: 100%;
+				object-fit: cover;
+				// transform: scale(1.2);
+				// transition: all 1s ease-out;
+			}
+		}
+	}
 }
