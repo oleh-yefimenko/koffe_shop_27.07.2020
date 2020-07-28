@@ -5,13 +5,13 @@
 			max-width: 800px;
 		}
 	}
+
 	.header {
 		&__navigation {
 			margin: 0 0 60px 0;
 		}
 	}
 }
-
 @media screen and (max-width: 650px) {
 	.promo {
 		&__title {
@@ -38,6 +38,25 @@
 	.promo {
 		&__content {
 			margin: 90px 0 0 0;
+		}
+
+		&__slider {
+			position: relative;
+			overflow: hidden;
+			// max-height: 650px;
+		}
+
+		&__slide {
+			overflow: hidden;
+			// max-height: 650px;
+
+			img {
+				max-height: 100%;
+				// max-width: 100%;
+				object-fit: cover;
+				// transform: scale(1.2);
+				// transition: all 1s ease-out;
+			}
 		}
 	}
 	.header {

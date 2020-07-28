@@ -211,12 +211,13 @@
 	}
 
 	&__slide {
+		// overflow: hidden;
 		// min-width: 0;
 
 		img {
 			max-height: 100%;
 			// max-width: 100%;
-			object-fit: cover;
+			// object-fit: cover;
 			// transform: scale(1.2);
 			// transition: all 1s ease-out;
 		}

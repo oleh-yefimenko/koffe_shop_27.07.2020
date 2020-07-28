@@ -364,8 +364,6 @@ body a {
 
 .promo__slide img {
   max-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .header__navigation {
@@ -439,6 +437,7 @@ body a {
 /* Активная точка */
 /* Элемент точки */
 .fixed {
+  position: relative;
   padding: 80px 0;
   background: url(../img/4_fixed/fixed_bg.jpg) center/cover no-repeat fixed;
 }
@@ -522,6 +521,18 @@ body a {
 @media screen and (max-width: 576px) {
   .promo__content {
     margin: 90px 0 0 0;
+  }
+  .promo__slider {
+    position: relative;
+    overflow: hidden;
+  }
+  .promo__slide {
+    overflow: hidden;
+  }
+  .promo__slide img {
+    max-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .header {
     width: 100%;
