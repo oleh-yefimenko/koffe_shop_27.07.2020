@@ -1,0 +1,39 @@
+.price {
+	padding: 60px 0;
+
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		// flex: 1 1 25%;
+		margin: 0 10px 0 0;
+		min-width: 170px;
+	}
+
+	&__card:last-child {
+		margin: 0;
+	}
+
+	&__quantity {
+		margin: 0 0 10px 0;
+		text-transform: uppercase;
+		font-family: $font-family-kurale;
+		font-size: 25px;
+		font-weight: 700;
+	}
+
+	&__card-title {
+		margin: 0 0 15px 0;
+		text-transform: uppercase;
+		font-family: $font-family-kurale;
+		font-size: 18px;
+		font-weight: 700;
+	}
+}

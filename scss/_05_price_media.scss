@@ -1,0 +1,109 @@
+@media screen and (max-width: 740px) {
+	.price {
+		&__content {
+			flex-wrap: wrap;
+		}
+
+		&__card {
+			flex: 1 1 50%;
+			display: flex;
+			justify-content: space-between;
+			margin: 0 0 20px 0;
+			padding: 7px;
+		}
+
+		&__card:last-child {
+			margin: 0 0 20px 0;
+		}
+
+		&__card-title {
+		}
+
+		&__card-text {
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.price {
+		padding: 40px 0 20px 0;
+		&__content {
+			flex-wrap: wrap;
+		}
+
+		&__card {
+			max-width: 300px;
+			padding: 0 15px;
+			margin: 0 0 20px 0;
+			flex: 1 1 50%;
+		}
+
+		&__card:last-child {
+			margin: 0 0 20px 0;
+		}
+
+		&__card-image {
+		}
+
+		&__card-title {
+		}
+
+		&__card-text {
+		}
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.price {
+		padding: 40px 0 40px 0;
+		&__content {
+			flex-wrap: wrap;
+		}
+
+		&__card {
+			flex: 1 1 100%;
+
+			padding: 15px;
+		}
+
+		&__card:last-child {
+			margin: 0 0 20px 0;
+		}
+
+		&__card-image {
+		}
+
+		&__card-title {
+		}
+
+		&__card-text {
+		}
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.price {
+		&__content {
+			flex-direction: column;
+		}
+
+		&__card {
+			flex: 1 1 100%;
+			margin: 0 0 30px 0;
+			padding: 0 15px;
+		}
+
+		&__card:last-child {
+			margin: 0;
+		}
+
+		&__card-image {
+		}
+
+		&__card-title {
+		}
+
+		&__card-text {
+		}
+	}
+}
