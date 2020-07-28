@@ -15,12 +15,14 @@
 <body>
 
 	<div class="wrapper-website">
-		<section id="promo" class="promo fulscreen">
+		<section id="promo" class="promo fullscreen">
 
 			<div class="promo__wrapper">
 
 				<div class="promo__wrapper-content">
+
 					<div class="container">
+
 						<header id="header" class="header">
 							<nav class="header__navigation">
 								<ul class="header__menu">
@@ -31,7 +33,19 @@
 									<li class="header__list"><a href="#" class="header__link">контакты</a></li>
 								</ul>
 							</nav>
+
+							<!-- menu burger -->
+
+							<div class="wrapper-menu">
+								<div class="line-menu half start"></div>
+								<div class="line-menu"></div>
+								<div class="line-menu half end"></div>
+							</div>
+							<!-- _________ -->
+
 						</header>
+
+
 						<div class="promo__content">
 							<div class="promo__logo">
 								<img src="img/1_promo/promo__logo.png" alt="Логотип магазина кофе">
@@ -44,7 +58,10 @@
 								Мы готовим кофе больше чем в 30 вариантах, включая самые экзотические сорта.
 								<span>География наших поставщиков насчитывает 12 стран.</span>
 							</p>
-							<a href="#" class="promo__button button">отведай чашечку</a>
+							<a href="#" class="promo__button button">
+								<span class="promo__button-text">отведай чашечку</span>
+								<span class="promo__button-wawes"></span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -66,10 +83,21 @@
 			</div>
 		</section>
 
+		<section id="fixed" class="fixed">
+			<div class="container">
+				<div class="fixed__logo">
+					<img src="img/4_fixed/fixed__logo.png" alt="Логотип">
+				</div>
+			</div>
+		</section>
+
 		<main id="main" class="main">
 		</main>
 
 		<footer id="footer" class="footer">
+			<div class="container">
+				<p class="footer__content">oleh yefimenko 2020</p>
+			</div>
 		</footer>
 	</div>
 
@@ -77,6 +105,7 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/promo__slider.js"></script>
+	<script src="js/menu.js"></script>
 	<script src="js/script.js"></script>
 
 

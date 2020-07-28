@@ -1,0 +1,9 @@
+.footer {
+	padding: 10px;
+	background: $color-black;
+	&__content {
+		font-family: $font-family-kurale;
+		color: $color-white;
+		text-align: center;
+	}
+}

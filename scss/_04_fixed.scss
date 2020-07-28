@@ -1,0 +1,11 @@
+.fixed {
+	padding: 80px 0;
+	background: url(../img/4_fixed/fixed_bg.jpg) center / cover no-repeat fixed;
+	&__logo {
+		max-width: 250px;
+		margin: 0 auto;
+		img {
+			max-width: 100%;
+		}
+	}
+}
