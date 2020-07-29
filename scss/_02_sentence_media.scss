@@ -1,3 +1,10 @@
+@media screen and (max-width: 800px) {
+	.sentence {
+		&__card {
+			padding: 7px;
+		}
+	}
+}
 @media screen and (max-width: 740px) {
 	.sentence {
 		&__content {

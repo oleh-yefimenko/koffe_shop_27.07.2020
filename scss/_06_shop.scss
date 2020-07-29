@@ -1,4 +1,5 @@
-.price {
+.shop {
+	background: url(../img/3_blog/blog_bg.jpg) no-repeat center center / cover;
 	padding: 60px 0;
 
 	&__content {
@@ -14,27 +15,28 @@
 		text-align: center;
 		// flex: 1 1 25%;
 		margin: 0 10px 0 0;
-		min-width: 170px;
 	}
 
 	&__card:last-child {
 		margin: 0;
 	}
 
-	&__quantity {
+	&__card-image {
 		margin: 0 0 10px 0;
-		text-transform: uppercase;
-		color: $color-gold;
-		font-family: $font-family-kurale;
-		font-size: 25px;
-		font-weight: 700;
+		// max-width: 200px;
+		img {
+			max-width: 100%;
+		}
 	}
 
 	&__card-title {
-		margin: 0 0 15px 0;
+		margin: 0 0 10px 0;
 		text-transform: uppercase;
 		font-family: $font-family-kurale;
-		font-size: 18px;
+		font-size: 20px;
 		font-weight: 700;
 	}
+
+	// &__card-text {
+	// }
 }

@@ -696,9 +696,17 @@ body a {
 }
 
 .blog__link {
+  display: block;
+  padding: 10px 0;
   text-transform: uppercase;
   color: #000;
   cursor: pointer;
+}
+
+.blog__link:hover {
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  color: #d1a954;
 }
 
 .fixed {
@@ -755,6 +763,7 @@ body a {
 .price__quantity {
   margin: 0 0 10px 0;
   text-transform: uppercase;
+  color: #d1a954;
   font-family: "Kurale", serif;
   font-size: 25px;
   font-weight: 700;
@@ -768,14 +777,195 @@ body a {
   font-weight: 700;
 }
 
+.shop {
+  background: url(../img/3_blog/blog_bg.jpg) no-repeat center center/cover;
+  padding: 60px 0;
+}
+
+.shop__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shop__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 10px 0 0;
+}
+
+.shop__card:last-child {
+  margin: 0;
+}
+
+.shop__card-image {
+  margin: 0 0 10px 0;
+}
+
+.shop__card-image img {
+  max-width: 100%;
+}
+
+.shop__card-title {
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  font-family: "Kurale", serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sponsors {
+  padding: 40px 0;
+}
+
+.sponsors__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sponsors__card {
+  max-width: 320px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 320px;
+          flex: 1 1 320px;
+}
+
+.sponsors__card img {
+  max-width: 100%;
+}
+
+.about {
+  padding: 40px 0;
+  background: url(../img/8_about/about-bg.jpg) no-repeat center center/cover;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__logo {
+  max-width: 150px;
+  margin: 0 0 40px 0;
+}
+
+.about__logo img {
+  max-width: 100%;
+}
+
+.about__subtitle {
+  margin: 0 0 40px 0;
+}
+
+.about__subtitle span {
+  display: block;
+}
+
+.about__title {
+  margin: 0 0 40px 0;
+  font-family: "Kurale", serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.about__title:nth-child(5) {
+  margin: 0 0 10px 0;
+}
+
+.about__text {
+  margin: 0 0 40px 0;
+}
+
+.about__text span {
+  display: block;
+}
+
+.about__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.about__email {
+  display: block;
+  margin: 0 0 20px 0;
+  width: 340px;
+  padding: 7px 15px;
+  background: transparent;
+  text-align: center;
+  font-size: 17px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.about__button {
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 7px;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.about__button:hover {
+  color: #d1a954;
+  border-color: #d1a954;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
 .footer {
   padding: 10px;
-  background: #000;
+  background: #fff;
 }
 
 .footer__content {
   font-family: "Kurale", serif;
-  color: #fff;
+  color: #000;
   text-align: center;
 }
 
@@ -832,6 +1022,14 @@ body a {
   }
   .header__navigation {
     margin: -100px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -948,11 +1146,6 @@ body a {
   .promo__title {
     font-size: 55px;
   }
-  .header__menu {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
 }
 
 @media screen and (max-width: 576px) {
@@ -967,6 +1160,12 @@ body a {
     max-height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sentence__card {
+    padding: 7px;
   }
 }
 
@@ -1144,5 +1343,165 @@ body a {
   }
   .price__card:last-child {
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .shop__card-title span {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .shop__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .shop__card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+    margin: 0 0 20px 0;
+  }
+  .shop__card:last-child {
+    margin: 0 0 20px 0;
+  }
+  .shop__card-title span {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .shop__card-title span {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .shop__card {
+    max-width: 300px;
+    margin: 0 auto 20px auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+  .shop__card:last-child {
+    margin: 0 auto 20px auto;
+  }
+  .shop__card-title span {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sponsors {
+    padding: 20px 0;
+  }
+  .sponsors__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sponsors__card {
+    max-width: 320px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 320px;
+            flex: 1 1 320px;
+  }
+  .sponsors__card img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sponsors__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sponsors__card {
+    max-width: 30%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+    margin: 0 0 20px 0;
+    padding: 0 15px;
+  }
+  .sponsors__card img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sponsors__card {
+    max-width: 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about {
+    padding: 30px 0;
+  }
+  .about__logo {
+    margin: 0 0 30px 0;
+  }
+  .about__subtitle {
+    margin: 0 0 30px 0;
+  }
+  .about__title {
+    margin: 0 0 20px 0;
+  }
+  .about__text {
+    margin: 0 0 40px 0;
+    font-size: 14px;
+  }
+  .about__text span {
+    display: block;
+  }
+  .about__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .about__email {
+    display: block;
+    margin: 0 0 20px 0;
+    width: 340px;
+    padding: 7px 15px;
+    background: transparent;
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  .about__button {
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .about__email {
+    width: 300px;
   }
 }

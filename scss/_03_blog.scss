@@ -42,8 +42,15 @@
 	}
 
 	&__link {
+		display: block;
+		padding: 10px 0;
 		text-transform: uppercase;
 		color: $color-black;
 		cursor: pointer;
+	}
+
+	&__link:hover {
+		transition: all 0.8s ease 0s;
+		color: $color-gold;
 	}
 }

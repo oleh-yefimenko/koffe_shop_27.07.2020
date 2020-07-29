@@ -1,0 +1,62 @@
+@media screen and (max-width: 800px) {
+	.shop {
+		&__card-title {
+			span {
+				display: block;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.shop {
+		&__content {
+			flex-wrap: wrap;
+		}
+		&__card {
+			flex: 0 1 45%;
+			margin: 0 0 20px 0;
+		}
+
+		&__card:last-child {
+			margin: 0 0 20px 0;
+		}
+
+		&__card-title {
+			span {
+				display: inline;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.shop {
+		&__card-title {
+			span {
+				display: block;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.shop {
+		&__content {
+		}
+		&__card {
+			max-width: 300px;
+			margin: 0 auto 20px auto;
+			flex: 1 1 100%;
+		}
+		&__card:last-child {
+			margin: 0 auto 20px auto;
+		}
+
+		&__card-title {
+			span {
+				display: inline;
+			}
+		}
+	}
+}

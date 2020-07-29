@@ -1,0 +1,45 @@
+@media screen and (max-width: 992px) {
+	.sponsors {
+		padding: 20px 0;
+		&__content {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		&__card {
+			max-width: 320px;
+			flex: 1 1 320px;
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.sponsors {
+		&__content {
+			flex-wrap: wrap;
+		}
+
+		&__card {
+			max-width: 30%;
+			flex: 1 1 30%;
+			margin: 0 0 20px 0;
+			padding: 0 15px;
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.sponsors {
+		&__card {
+			max-width: 50%;
+			flex: 1 1 50%;
+		}
+	}
+}
